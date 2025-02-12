@@ -1,0 +1,87 @@
+.movie-list-header {
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.movie-list-heading {
+  font-size: 28px;
+  color: var(--heading_color);
+}
+.movie-filter {
+  list-style: none;
+  /* padding-right: 10px; */
+  font-size: 16px;
+}
+.active {
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: 500;
+}
+.movie-filter-item {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.movie-sorting {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  margin: 0 10px;
+  padding: 0 15px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+.movie-card {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px; /* Adjust width as necessary */
+  margin-right: 20px; /* Optional: space from other elements */
+}
+
+/* Search input styling */
+.search-input {
+  width: 100%;
+  padding: 15px 40px 15px 15px; /* Padding for input and space for the icon */
+  font-size: 16px;
+  border: 2px solid #555;
+  border-radius: 25px; /* Rounded edges */
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  visibility: visible;
+  margin-bottom: 10px;
+}
+
+/* Change input border color when focused */
+.search-input:focus {
+  border-color: #007bff;
+}
+
+/* Search icon styling */
+.search-icon {
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  right: 15px; /* Positioning the icon inside the input */
+  color: #555;
+  font-size: 18px; /* Adjust size of the icon */
+  pointer-events: none; /* Makes sure the icon is not clickable */
+  margin-bottom: 10px;
+}
+
+/* Optional: Hover effect for the icon */
+.search-wrapper:hover .search-icon {
+  color: #007bff;
+}
+.notavailableMovie {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
